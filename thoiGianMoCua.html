@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Giờ mở cửa — Tiệm Sách Cũ</title>
+    <style>
+        :root {
+            --w: 40rem;
+            --sp: 1.25rem;
+            --bg: #fff;
+            --fg: #111;
+            --muted: #666;
+            --line: #eee
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b0b0b;
+                --fg: #eaeaea;
+                --muted: #a0a0a0;
+                --line: #1a1a1a
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial
+        }
+
+        .wrap {
+            max-width: var(--w);
+            margin: 0 auto;
+            padding: calc(var(--sp)*1.2) var(--sp)
+        }
+
+        a {
+            color: inherit
+        }
+
+        nav {
+            margin: .5rem 0 1rem;
+            display: flex;
+            gap: .75rem;
+            flex-wrap: wrap
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: .25rem .5rem;
+            border-radius: .5rem
+        }
+
+        nav a:hover {
+            background: var(--line)
+        }
+
+        h1 {
+            margin: 0 0 .25rem
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: .5rem;
+            border: 1px solid var(--line)
+        }
+
+        th,
+        td {
+            padding: .6rem;
+            border-top: 1px solid var(--line);
+            text-align: left
+        }
+
+        th {
+            background: transparent;
+            color: var(--muted);
+            font-weight: 600
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding-top: .75rem;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: .9rem
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Thời gian mở cửa</h1>
+        <p class="muted">Ghé trực tiếp hoặc liên hệ trước.</p>
+
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="lienHe.html">Liên hệ</a>
+        </nav>
+
+        <table aria-label="Giờ mở cửa">
+            <thead>
+                <tr>
+                    <th>Thứ</th>
+                    <th>Giờ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Thứ 2 – Thứ 6</td>
+                    <td>09:00 – 20:00</td>
+                </tr>
+                <tr>
+                    <td>Thứ 7</td>
+                    <td>09:00 – 18:00</td>
+                </tr>
+                <tr>
+                    <td>Chủ nhật</td>
+                    <td>Nghỉ (nhận form)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top:1rem">Ngoài giờ, vui lòng để lại thông tin tại trang <a href="lienHe.html">Liên hệ</a>.</p>
+
+        <footer>© Tiệm Sách Cũ</footer>
+    </div>
+</body>
+
+</html>

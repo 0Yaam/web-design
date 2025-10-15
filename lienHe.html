@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Liên hệ — Tiệm Sách Cũ</title>
+    <style>
+        :root {
+            --w: 40rem;
+            --sp: 1.25rem;
+            --bg: #fff;
+            --fg: #111;
+            --muted: #666;
+            --line: #eee
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b0b0b;
+                --fg: #eaeaea;
+                --muted: #a0a0a0;
+                --line: #1a1a1a
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial
+        }
+
+        .wrap {
+            max-width: var(--w);
+            margin: 0 auto;
+            padding: calc(var(--sp)*1.2) var(--sp)
+        }
+
+        a {
+            color: inherit
+        }
+
+        h1 {
+            margin: 0 0 .5rem
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        form {
+            display: grid;
+            gap: .9rem;
+            margin-top: .5rem;
+            border: 1px solid var(--line);
+            border-radius: .6rem;
+            padding: 1rem;
+            background: transparent
+        }
+
+        label {
+            font-weight: 600;
+            font-size: .95rem
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: .7rem;
+            border: 1px solid var(--line);
+            border-radius: .5rem;
+            background: transparent;
+            color: inherit;
+            font: inherit
+        }
+
+        button {
+            padding: .7rem 1rem;
+            border: 0;
+            border-radius: .6rem;
+            background: var(--fg);
+            color: var(--bg);
+            cursor: pointer
+        }
+
+        button:hover {
+            opacity: .9
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .9rem
+        }
+
+        @media (max-width:640px) {
+            .row {
+                grid-template-columns: 1fr
+            }
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding-top: .75rem;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: .9rem
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Liên hệ</h1>
+        <p class="muted">Điền thông tin tối thiểu. Chúng tôi phản hồi sớm.</p>
+
+        <nav style="margin:.5rem 0 1rem;display:flex;gap:.75rem;flex-wrap:wrap">
+            <a href="index.html">Trang chủ</a>
+            <a href="thoiGianMoCua.html">Giờ mở cửa</a>
+        </nav>
+
+        <form id="f">
+            <div class="row">
+                <div>
+                    <label for="name">Họ tên *</label>
+                    <input id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="email">Email *</label>
+                    <input id="email" name="email" type="email" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label for="phone">Điện thoại</label>
+                    <input id="phone" name="phone" />
+                </div>
+                <div>
+                    <label for="purpose">Mục đích *</label>
+                    <select id="purpose" name="purpose" required>
+                        <option value="">— Chọn —</option>
+                        <option value="mua">Mua sách</option>
+                        <option value="ban">Bán / Ký gửi</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label for="book">Thông tin sách (tên, tác giả, tình trạng…)</label>
+                <textarea id="book" name="book" rows="3"></textarea>
+            </div>
+
+            <div>
+                <label for="note">Ghi chú</label>
+                <textarea id="note" name="note" rows="3"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Gửi</button>
+            </div>
+            <small class="muted">* Trường bắt buộc</small>
+        </form>
+
+        <footer>© Tiệm Sách Cũ</footer>
+    </div>
+
+</body>
+
+</html>

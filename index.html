@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tiệm Sách Cũ – Trang chủ</title>
+  <meta name="description"
+    content="Tiệm sách cũ – mua bán, trao đổi sách cũ. Sách mới nhập, giới thiệu, danh mục thể loại." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0
+    }
+
+    header,
+    nav,
+    footer {
+      background: #f7f7f7
+    }
+
+    header {
+      padding: 16px
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      padding: 10px 16px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      flex-wrap: wrap
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 6px 10px;
+      border-radius: 8px
+    }
+
+    nav a:hover {
+      background: #eaeaea
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px
+    }
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 12px;
+      background: #fff
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      background: #efefef;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-right: 6px
+    }
+
+    .hero {
+      padding: 16px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      margin-bottom: 16px
+    }
+
+    footer {
+      margin-top: 32px;
+      padding: 16px;
+      font-size: 14px;
+      color: #666
+    }
+
+    .section-title {
+      margin: 24px 0 8px
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <h1>Tiệm Sách Cũ</h1>
+    <p>Mua–bán, trao đổi sách cũ. Tìm lại những cuốn sách bạn yêu.</p>
+  </header>
+
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#sach-moi">Sách mới nhập</a>
+    <a href="#danh-muc">Các loại sách đang bán</a>
+    <a href="thoiGianMoCua.html">Thời gian mở cửa</a>
+    <a href="lienHe.html">Liên hệ</a>
+  </nav>
+
+  <main class="container">
+    <section id="sach-moi" class="hero">
+      <h2 class="section-title">Sách mới nhập</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/dac-nhan-tam.jpg" alt="Đắc Nhân Tâm (bản cũ)" />
+          <h3>Đắc Nhân Tâm</h3>
+          <p>Tác giả: Dale Carnegie<br>Tình trạng: Rất tốt</p>
+          <span class="badge">Kỹ năng</span><span class="badge">Bán chạy</span>
+        </article>
+        <article class="card">
+          <img src="images/chi-pheo.jpg" alt="Chí Phèo" />
+          <h3>Chí Phèo</h3>
+          <p>Tác giả: Nam Cao<br>Tình trạng: Tốt</p>
+          <span class="badge">Văn học VN</span>
+        </article>
+        <article class="card">
+          <img src="images/clean-code.jpg" alt="Clean Code" />
+          <h3>Clean Code</h3>
+          <p>Tác giả: Robert C. Martin<br>Tình trạng: Khá</p>
+          <span class="badge">CNTT</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="gioi-thieu">
+      <h2 class="section-title">Giới thiệu về tiệm sách</h2>
+      <p>Tiệm Sách Cũ chuyên thu mua và bán lại các đầu sách cũ còn tốt với giá hợp lý.
+        Chúng tôi ưu tiên sách học thuật, văn học kinh điển, kỹ năng và công nghệ.
+        Khách có thể mang sách đến ký gửi hoặc bán trực tiếp.</p>
+    </section>
+
+    <section id="danh-muc">
+      <h2 class="section-title">Các loại sách đang bán</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Văn học</h3>
+          <p>Tiểu thuyết, truyện ngắn, thơ…</p>
+        </div>
+        <div class="card">
+          <h3>Kỹ năng – Kinh doanh</h3>
+          <p>Tư duy, giao tiếp, quản trị, marketing…</p>
+        </div>
+        <div class="card">
+          <h3>CNTT – Khoa học</h3>
+          <p>Lập trình, hệ thống, AI, toán, vật lý…</p>
+        </div>
+        <div class="card">
+          <h3>Thiếu nhi – Giáo dục</h3>
+          <p>Truyện thiếu nhi, tham khảo, luyện thi…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <h2 class="section-title">Muốn mua hoặc bán sách?</h2>
+      <p>Xem <a href="thoiGianMoCua.html">thời gian mở cửa</a> hoặc vào trang <a href="lienHe.html">Liên hệ</a> để gửi
+        thông tin.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © Tiệm Sách Cũ • <a href="thoiGianMoCua.html">Thời gian mở cửa</a> • <a href="lienHe.html">Liên hệ</a>
+    </div>
+  </footer>
+</body>
+
+</html>
